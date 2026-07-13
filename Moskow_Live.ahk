@@ -1,6 +1,9 @@
 ﻿; <COMPILER: v1.1.37.02>
 #Requires AutoHotkey v2.0
 #SingleInstance Force
+; @version 1.2.0
+; остальной код...
+#SingleInstance Force
 if not A_IsAdmin {
 Run('*RunAs "' A_ScriptFullPath '"')
 ExitApp()
