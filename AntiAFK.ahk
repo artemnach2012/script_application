@@ -2,6 +2,8 @@
 #SingleInstance Force
 #MaxThreadsPerHotkey 2
 
+; @version 2.0.0
+
 Toggle := false
 
 F8:: {
