@@ -1,22 +1,4 @@
 {
-  "ArmyReports": {
-    "name": "Армия докладов",
-    "file": "ArmyReports.ahk",
-    "version": "1.2.0"
-  },
-  "AntiAFK": {
-    "name": "Анти-АФК",
-    "file": "AntiAFK.ahk",
-    "version": "2.0.0"
-  },
-  "MoscowLive": {
-    "name": "Москва-Live",
-    "file": "MoscowLive.ahk",
-    "version": "1.1.0"
-  }
-}
-
-{
   "ArmyReports": "1.2.0",
   "AntiAFK": "2.0.0",
   "MoscowLive": "1.1.0",
