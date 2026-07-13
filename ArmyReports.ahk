@@ -19,17 +19,19 @@ MyGui := Gui(, "Армия докладов")
 MyGui.BackColor := "2A2A2A"
 
 ; Заголовок
+MyGui := Gui(, "Армия докладов")
+MyGui.BackColor := "2A2A2A"
 MyGui.SetFont("s14 cYellow Bold", "Segoe UI")
 MyGui.Add("Text", "xm w400 Center", "📢 АРМИЯ ДОКЛАДОВ")
 
-; Поля ввода
+; Явно устанавливаем белый цвет для меток
 MyGui.SetFont("s10 cWhite", "Segoe UI")
 MyGui.Add("Text", "xm y+20", "Звание:")
 MyGui.Add("Text", "xm y+15", "Фамилия:")
 MyGui.Add("Text", "xm y+15", "Пост:")
 MyGui.Add("Text", "xm y+15", "Интервал (минуты):")
 
-; Теперь поля ввода – чёрный шрифт
+; Теперь чёрный для полей ввода
 MyGui.SetFont("s10 cBlack", "Segoe UI")
 edtRank := MyGui.Add("Edit", "w200 xm y+5 BackgroundFFFFFF", "")
 edtSurname := MyGui.Add("Edit", "w200 xm y+5 BackgroundFFFFFF", "")
