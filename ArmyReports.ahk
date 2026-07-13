@@ -25,16 +25,15 @@ MyGui.Add("Text", "xm w400 Center", "📢 АРМИЯ ДОКЛАДОВ")
 ; Поля ввода
 MyGui.SetFont("s10 cWhite", "Segoe UI")
 MyGui.Add("Text", "xm y+20", "Звание:")
+MyGui.Add("Text", "xm y+15", "Фамилия:")
+MyGui.Add("Text", "xm y+15", "Пост:")
+MyGui.Add("Text", "xm y+15", "Интервал (минуты):")
+
+; Теперь поля ввода – чёрный шрифт
 MyGui.SetFont("s10 cBlack", "Segoe UI")
 edtRank := MyGui.Add("Edit", "w200 xm y+5 BackgroundFFFFFF", "")
-
-MyGui.Add("Text", "xm y+15", "Фамилия:")
 edtSurname := MyGui.Add("Edit", "w200 xm y+5 BackgroundFFFFFF", "")
-
-MyGui.Add("Text", "xm y+15", "Пост:")
 edtPost := MyGui.Add("Edit", "w200 xm y+5 BackgroundFFFFFF", "КПП-1")
-
-MyGui.Add("Text", "xm y+15", "Интервал (минуты):")
 edtInterval := MyGui.Add("Edit", "w80 xm y+5 BackgroundFFFFFF", "10")
 
 ; Кнопки
