@@ -14,9 +14,9 @@
     "file": "MoscowLive.ahk",
     "version": "1.1.0"
   },
-  "NewScript": {
-    "name": "Новый Скрипт (Авто)",
-    "file": "NewScript.ahk",
-    "version": "1.0.5"
+  "Launcher": {
+    "name": "Обновление Лаунчера",
+    "file": "Launcher.ahk",
+    "version": "1.0.1"
   }
 }
