@@ -17,28 +17,31 @@ post := ""
 ; ==================== СОЗДАНИЕ GUI ====================
 MyGui := Gui(, "Армия докладов")
 MyGui.BackColor := "2A2A2A"
-
-; Заголовок
-MyGui := Gui(, "Армия докладов")
-MyGui.BackColor := "2A2A2A"
 MyGui.SetFont("s14 cYellow Bold", "Segoe UI")
 MyGui.Add("Text", "xm w400 Center", "📢 АРМИЯ ДОКЛАДОВ")
 
-; Явно устанавливаем белый цвет для меток
+; Метки и поля – каждое на новой строке
 MyGui.SetFont("s10 cWhite", "Segoe UI")
 MyGui.Add("Text", "xm y+20", "Звание:")
-MyGui.Add("Text", "xm y+15", "Фамилия:")
-MyGui.Add("Text", "xm y+15", "Пост:")
-MyGui.Add("Text", "xm y+15", "Интервал (минуты):")
-
-; Теперь чёрный для полей ввода
 MyGui.SetFont("s10 cBlack", "Segoe UI")
-edtRank := MyGui.Add("Edit", "w200 xm y+5 BackgroundFFFFFF", "")
-edtSurname := MyGui.Add("Edit", "w200 xm y+5 BackgroundFFFFFF", "")
-edtPost := MyGui.Add("Edit", "w200 xm y+5 BackgroundFFFFFF", "КПП-1")
-edtInterval := MyGui.Add("Edit", "w80 xm y+5 BackgroundFFFFFF", "10")
+edtRank := MyGui.Add("Edit", "w200 xm y+5", "")
 
-; Кнопки
+MyGui.SetFont("s10 cWhite", "Segoe UI")
+MyGui.Add("Text", "xm y+15", "Фамилия:")
+MyGui.SetFont("s10 cBlack", "Segoe UI")
+edtSurname := MyGui.Add("Edit", "w200 xm y+5", "")
+
+MyGui.SetFont("s10 cWhite", "Segoe UI")
+MyGui.Add("Text", "xm y+15", "Пост:")
+MyGui.SetFont("s10 cBlack", "Segoe UI")
+edtPost := MyGui.Add("Edit", "w200 xm y+5", "КПП-1")
+
+MyGui.SetFont("s10 cWhite", "Segoe UI")
+MyGui.Add("Text", "xm y+15", "Интервал (минуты):")
+MyGui.SetFont("s10 cBlack", "Segoe UI")
+edtInterval := MyGui.Add("Edit", "w80 xm y+5", "10")
+
+; Кнопки – с отступом от полей
 MyGui.SetFont("s10 cBlack Bold", "Segoe UI")
 btnStart := MyGui.Add("Button", "xm y+20 w100", "▶ Старт")
 btnStart.BackColor := "4CAF50"
@@ -47,11 +50,9 @@ btnStop.BackColor := "F44336"
 btnConfirm := MyGui.Add("Button", "x+10 w120 Hidden", "✅ Отправил")
 btnConfirm.BackColor := "2196F3"
 
-; Таймер
+; Таймер и статус
 MyGui.SetFont("s28 cLime Bold", "Segoe UI")
 txtTimer := MyGui.Add("Text", "xm y+20 w400 Center", "⏳ 00:00.00")
-
-; Статус
 MyGui.SetFont("s10 cWhite", "Segoe UI")
 txtStatus := MyGui.Add("Text", "xm y+15 w400 Center", "Готов к работе.")
 
