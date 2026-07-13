@@ -1,5 +1,8 @@
 ﻿#Requires AutoHotkey v2.0
 #SingleInstance Force
+; @version 1.2.0
+; остальной код...
+#SingleInstance Force
 
 ; ==================== ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ ====================
 reports := []
