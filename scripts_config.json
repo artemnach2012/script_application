@@ -1,0 +1,53 @@
+{
+  "scripts": {
+    "ArmyReports": {
+      "name": "Армия докладов",
+      "file": "ArmyReports.ahk",
+      "description": "Скрипт для автоматических докладов",
+      "beta": false,
+      "settings": [
+        {
+          "type": "CheckBox",
+          "label": "Включить автоматический доклад",
+          "iniSection": "ArmyReports",
+          "iniKey": "AutoReport",
+          "default": 0
+        },
+        {
+          "type": "Edit",
+          "label": "Клавиша для ручного доклада:",
+          "iniSection": "ArmyReports",
+          "iniKey": "Hotkey",
+          "default": "F8"
+        }
+      ]
+    },
+    "AntiAFK": {
+      "name": "Анти-АФК",
+      "file": "AntiAFK.ahk",
+      "description": "Защита от AFK",
+      "beta": false,
+      "settings": [
+        ...
+      ]
+    },
+    "MyNewScript": {
+      "name": "Новый скрипт",
+      "file": "MyNewScript.ahk",
+      "description": "Тестовый скрипт",
+      "beta": true,
+      "settings": []
+    }
+  },
+  "launcherSettings": {
+    "autoStart": false,
+    "trayOnStart": false,
+    "autoCheckUpdates": true
+  },
+  "removedScripts": {
+    "OldScript": {
+      "removedBy": "artemnach",
+      "removalReason": "Скрипт устарел, заменён на новый."
+    }
+  }
+}
