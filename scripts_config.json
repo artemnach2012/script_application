@@ -3,7 +3,7 @@
     "ArmyReports": {
       "name": "Армия докладов",
       "file": "ArmyReports.ahk",
-      "description": "Скрипт для автоматических докладов",
+      "description": "Автоматические доклады",
       "beta": false,
       "settings": [
         {
@@ -30,14 +30,14 @@
       "settings": [
         {
           "type": "Edit",
-          "label": "Интервал между действиями (в секундах):",
+          "label": "Интервал (сек):",
           "iniSection": "AntiAFK",
           "iniKey": "Interval",
           "default": "30"
         },
         {
           "type": "CheckBox",
-          "label": "Отправлять случайный символ в чат вместо прыжка",
+          "label": "Отправлять символ в чат",
           "iniSection": "AntiAFK",
           "iniKey": "ChatAntiAFK",
           "default": 0
@@ -52,14 +52,14 @@
       "settings": [
         {
           "type": "CheckBox",
-          "label": "Автоматически ловить объявления на сервере",
+          "label": "Ловить объявления",
           "iniSection": "MoscowLive",
           "iniKey": "CatchAds",
           "default": 0
         },
         {
           "type": "Edit",
-          "label": "Задержка перед редактированием (мс):",
+          "label": "Задержка (мс):",
           "iniSection": "MoscowLive",
           "iniKey": "Delay",
           "default": "500"
@@ -72,5 +72,10 @@
     "trayOnStart": 0,
     "autoCheckUpdates": 1
   },
-  "removedScripts": {}
+  "removedScripts": {
+    "OldScript": {
+      "removedBy": "artemnach",
+      "removalReason": "Скрипт устарел, используйте новый."
+    }
+  }
 }
